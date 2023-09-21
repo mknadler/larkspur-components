@@ -1,7 +1,6 @@
 <script>
 	import Checkbox from '$lib/components/Checkbox.svelte'
 	import RadioGroup from '$lib/components/RadioGroup.svelte'
-	import watercolor from '$lib/images/watercolor.jpg'
 	import Logo from './logo.svelte'
 
 	let checkboxBound = 'true';
