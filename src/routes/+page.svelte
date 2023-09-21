@@ -3,6 +3,8 @@
 	import RadioGroup from '$lib/components/RadioGroup.svelte'
 	import Logo from './logo.svelte'
 
+	let veryHackyWayToUseThisStringUntilIInstallAMarkdownThingy = `import { Checkbox } from 'larkspur';`
+
 	let checkboxBound = 'true';
 	let radiogroupBound;
 </script>
@@ -18,7 +20,8 @@
 </section>
 
 <section class="usage">
-```npm install whatever```
+	<h2>Installation</h2>
+	installation notes go here in the future. if you're seeing this for some reason: https://www.npmjs.com/package/larkspur-components is the package. then, in a .svelte file, `{veryHackyWayToUseThisStringUntilIInstallAMarkdownThingy}`
 </section>
 
 <section>
