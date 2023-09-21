@@ -59,11 +59,11 @@
 	header {
 		background: var(--color-lightgray);
 		width: 100%;
-		height: 5rem;
+		height: 8rem;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		padding-left: 1rem;
+		padding-left: 2rem;
 	}
 
 	header h1 {
@@ -71,7 +71,7 @@
 	}
 
 	section {
-		margin: 2rem;
+		margin: 3rem;
 		padding: 1rem;
 		border: 1px dotted var(--color-accents);
 	}
