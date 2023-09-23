@@ -41,6 +41,9 @@ devDependencies:
   '@sveltejs/package':
     specifier: ^2.2.2
     version: 2.2.2(svelte@4.2.0)(typescript@5.2.2)
+  animejs:
+    specifier: ^3.2.1
+    version: 3.2.1
   eslint:
     specifier: ^8.28.0
     version: 8.49.0
@@ -3911,6 +3914,10 @@ packages:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
+    dev: true
+
+  /animejs@3.2.1:
+    resolution: {integrity: sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==}
     dev: true
 
   /ansi-colors@4.1.3:
