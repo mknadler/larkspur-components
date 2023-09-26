@@ -1,7 +1,7 @@
 <script>
 	import Checkbox from '$lib/components/Checkbox.svelte'
 	import RadioGroup from '$lib/components/RadioGroup.svelte'
-	import GridLink from '$lib/components/GridLink.svelte'
+	import Gridlink from '$lib/components/Gridlink.svelte'
 	import Logo from './logo.svelte'
 
 	let veryHackyWayToUseThisStringUntilIInstallAMarkdownThingy = `import { Checkbox } from 'larkspur';`
@@ -44,12 +44,12 @@
 
 <section>
 	<h2>Grid link</h2>
-	<GridLink magnitude={2} numPoints={20} duration={3000}>
+	<Gridlink magnitude={2} numPoints={20} duration={3000}>
 		<a slot="link" href="#">This is a link</a>
-	</GridLink>
-	<GridLink magnitude={10} numPoints={30} duration={5000}>
+	</Gridlink>
+	<Gridlink magnitude={10} numPoints={30} duration={5000}>
 		<a slot="link" href="#">This is a different link</a>
-	</GridLink>
+	</Gridlink>
 </section>
 
 
