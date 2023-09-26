@@ -31,17 +31,17 @@
 	@import '../larkspur.css';
 	
 	.lark-radiogroup {
-		font-family: var(--font-space-mono);
-		color: var(--color-lightgray);
+		font-family: var(--lark-font-mono);
+		color: var(--lark-color-text);
 		margin: 2rem 0;
 		padding: 1rem;
 		max-width: 20rem;
-		font-family: var(--font-table);
-		border-color: var(--color-accents);
+		font-family: var(--lark-font-mono);
+		border-color: var(--lark-color-accents);
 		background: rgba(255, 255, 255, 0.05);
 	}
 	.lark-radiogroup legend {
-		font-family: var(--font-space-grotesk);
+		font-family: var(--lark-font-sans);
 	}
 
 	.lark-radiogroup__item {
@@ -62,13 +62,12 @@
 	.lark-radiogroup__item input:hover {
 		cursor: pointer;
 		text-decoration: underline;
-		text-decoration-color: var(--color-medpink)
+		text-decoration-color: var(--lark-color-accents)
 	}
 
 	.lark-radiogroup__item [type="radio"] {
 		-webkit-appearance: none;
 		appearance: none;
-		background-color: var(--color-dark);
 		font-size: inherit;
 		margin: 0;
 		padding: 0;
@@ -77,14 +76,14 @@
 		border-radius: 50%;
 		display: grid;
 		place-content: center;
-		border: 1px solid var(--color-accents);
+		border: 1px solid var(--lark-color-accents);
 	}
 
 	.lark-radiogroup__item [type="radio"]::before {
 		content: '';
 		width: 1.25em;
 		height: 1.25em;
-		background: var(--color-accents);
+		background: var(--lark-color-accents);
 		border-radius: 50%;
 		transform: scale(0);
 		transition: transform 200ms ease-out;
@@ -111,6 +110,6 @@
 	}
 
 	.lark-radiogroup__item input:focus {
-		outline: 1px solid var(--color-lightgray);
+		outline: 1px solid var(--lark-color-outline);
 	}
 </style>

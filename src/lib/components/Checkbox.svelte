@@ -12,8 +12,8 @@
 	@import '../larkspur.css';
 
 	.lark-checkbox {
-		font-family: var(--font-space-mono);
-		color: var(--color-lightgray);
+		font-family: var(--lark-font-mono);
+		color: var(--lark-color-text);
 		font-size: 1rem;
 		display: grid;
 		grid-template-columns: 1em auto;
@@ -31,13 +31,12 @@
 	.lark-checkbox input:hover {
 		cursor: pointer;
 		text-decoration: underline;
-		text-decoration-color: var(--color-medpink)
+		text-decoration-color: var(--lark-color-accents)
 	}
 
 	.lark-checkbox [type="checkbox"] {
 		-webkit-appearance: none;
 		appearance: none;
-		background-color: var(--color-dark);
 		font-size: inherit;
 		margin: 0;
 		padding: 0;
@@ -45,14 +44,14 @@
 		height: 1.25em;
 		display: grid;
 		place-content: center;
-		border: 1px solid var(--color-accents);
+		border: 1px solid var(--lark-color-accents);
 	}
 
 	.lark-checkbox [type="checkbox"]::before {
 		content: '';
 		width: 1.25em;
 		height: 1.25em;
-		background: var(--color-accents);
+		background: var(--lark-color-accents);
 		transform: scale(0);
 		transition: transform 200ms ease-out;
 	}
@@ -73,6 +72,6 @@
 	}
 
 	.lark-checkbox input:focus {
-		outline: 1px solid var(--color-lightgray);
+		outline: 1px solid var(--lark-color-outline);
 	}
 </style>

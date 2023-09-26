@@ -135,15 +135,15 @@
 	}
 
 	.lark-gridlink :global(> a) {
-		color: var(--color-text);
+		color: var(--lark-color-text);
 		text-decoration: none;
 		font-size: 24px;
 		font-weight: 100;
-		font-family: var(--font-space-grotesk);
+		font-family: var(--lark-font-sans);
 	}
 
 	.lark-gridlink :global(> a:hover) {
-		color: var(--color-medpink);
+		color: var(--lark-color-accents);
 	}
 
 	.lark-gridlink svg {
@@ -154,6 +154,6 @@
 	}
 
 	.lark-gridlink path {
-		stroke: var(--color-medpink);
+		stroke: var(--lark-color-accents);
 	}
 </style>

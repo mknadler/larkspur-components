@@ -52,24 +52,27 @@
 	</Gridlink>
 </section>
 
-
-
 <style lang="scss">
+	/* Can override theme colors */
+	:root {
+		--lark-color-outline: #EDEDED;
+		--lark-color-text: #EDEDED;
+		--lark-color-accents: #C2366E;
+		--lark-color-background: #110026;
+	}
 
 	:global(body) {
-		background: var(--color-background);
-		color: var(--color-text);
+		background: var(--lark-color-background);
+		color: var(--lark-color-text);
 		font-family: "Space Grotesk";
 		padding: 0;
 		margin: 0;
 	}
-
-	img {
-		width: 200px;
-	}
-
+	
 	header {
-		background: var(--color-lightgray);
+		--lark-color-background-light: var(--lark-color-text);
+		--lark-color-text-light: var(--lark-color-background);
+		background: var(--lark-color-background-light);
 		width: 100%;
 		height: 8rem;
 		display: flex;
@@ -79,13 +82,13 @@
 	}
 
 	header h1 {
-		color: var(--color-darkpurp);
+		color: var(--lark-color-text-light);
 	}
 
 	section {
 		margin: 3rem;
 		padding: 1rem;
-		border: 1px dotted var(--color-accents);
+		border: 1px dotted var(--lark-color-accents);
 	}
 
 	section.about p {
