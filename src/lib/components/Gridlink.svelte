@@ -1,7 +1,6 @@
 <script>
-	import anime from 'animejs';
 	import { onMount } from 'svelte';
-	// randomly trace from left to right
+	import anime from 'animejs';
 
 	export let magnitude;
 	export let numPoints;
@@ -12,15 +11,13 @@
 	}
 
 	if (!Number.isInteger(numPoints)) {
-		numPoints = Math.floor(numPoints);
+		numPoints = 2;
 	}
 
 	let height = magnitude * 2;
 
 	let el;
 	let pathEl;
-
-	// Make this reactive to the link width
 	let width;
 
 	function getRandomIntInclusive(min, max) {
@@ -34,7 +31,6 @@
 			return direction.join(' ')
 		}).join(' ');
 	}
-	//pointY += getRandomIntInclusive(-10, 10);
 
 	function generateRandomPathParts(oldParts) {
 		let newParts = oldParts.map((directionArray, index) => {
@@ -53,18 +49,11 @@
 		['M', '0', `${height/2}`]
 	];
 
-
-	/*
-		$: linkPath = dAttributeFrom2dPathArray(linkParts);
-		$: linkPartsMoved = generateRandomPathParts(linkParts);
-		$: linkPathMoved = dAttributeFrom2dPathArray(linkPartsMoved);
-	*/
 	let animation;
-
 
 	onMount(() => {
 		width = el.clientWidth;
-			let segmentWidth = width / (numPoints - 1);
+		let segmentWidth = width / (numPoints - 1);
 			
 		for (let i = 1; i < numPoints; i++) {
 			let pointX = segmentWidth * i;
@@ -82,7 +71,6 @@
 		let linkPathMoved = dAttributeFrom2dPathArray(linkPartsMoved);
 
 		pathEl.setAttribute('d', linkPathMoved)
-
 
 		animation = anime({
 		  targets: [pathEl],
@@ -130,14 +118,6 @@
 <style>
 	@import '../larkspur.css';
 
-	svg {
-		width: auto;
-	}
-
-	path {
-		stroke: var(--color-medpink);
-	}
-
 	.lark-gridlink__container {
 		position: absolute;
 		bottom: 0;
@@ -170,5 +150,10 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		width: auto;
+	}
+
+	.lark-gridlink path {
+		stroke: var(--color-medpink);
 	}
 </style>
