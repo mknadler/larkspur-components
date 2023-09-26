@@ -1,6 +1,7 @@
 <script>
 	import Checkbox from '$lib/components/Checkbox.svelte'
 	import RadioGroup from '$lib/components/RadioGroup.svelte'
+	import Gridlink from '$lib/components/Gridlink.svelte'
 	import Logo from './logo.svelte'
 
 	let veryHackyWayToUseThisStringUntilIInstallAMarkdownThingy = `import { Checkbox } from 'larkspur';`
@@ -41,6 +42,15 @@
 	Reactive data: {radiogroupBound}
 </section>
 
+<section>
+	<h2>Grid link</h2>
+	<Gridlink magnitude={2} numPoints={20} duration={3000}>
+		<a slot="link" href="#">This is a link</a>
+	</Gridlink>
+	<Gridlink magnitude={10} numPoints={30} duration={5000}>
+		<a slot="link" href="#">This is a different link</a>
+	</Gridlink>
+</section>
 
 
 
